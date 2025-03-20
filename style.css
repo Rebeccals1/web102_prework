@@ -32,7 +32,8 @@ body {
     text-align: center;
 }
 
-.stats-card:hover {
+.stats-card:hover,
+button:hover {
     box-shadow: 0 0 30px lightblue;
     cursor: pointer;
 }
