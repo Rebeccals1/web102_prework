@@ -19,7 +19,7 @@ The following **optional** features are implemented:
 
 * [x] Used a lighter color theme.
 * [x] Button color change on hover.
-* [x] Added container to help center content.
+* [x] Added content wrapper to help center all of the main content.
 
 ## Video Walkthrough
 
