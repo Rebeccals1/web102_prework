@@ -17,8 +17,11 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
+* [x] Added the amount of money "Needed" or the amount of money "Over" to each game card.
+* [x] Added a button that sorts the game list by the amount of backers it has.
+* [x] Search bar to search for specific games.
 * [x] Used a lighter color theme.
-* [x] Button color change on hover.
+* [x] Button color changes and uses the pointer on hover.
 * [x] Added content wrapper to help center all of the main content.
 
 ## Video Walkthrough
