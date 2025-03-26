@@ -41,12 +41,18 @@ function addGamesToPage(games) {
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
+
+        const pledgeDiff = (game.goal - game.pledged) < 0 ? 
+            `Over by $${Math.abs(game.goal - game.pledged).toLocaleString()}` : 
+            `Needed $${(game.goal - game.pledged).toLocaleString()}`;
+
         gameCard.innerHTML = `
             <img src="${game.img}" class="game-img" alt="${game.name}" />
             <h2>${game.name}</h2>
             <p>${game.description}</p>
             <p>Pledged: $${game.pledged.toLocaleString()}</p>
             <p>Goal: $${game.goal.toLocaleString()}</p>
+            <p>${pledgeDiff}</p>
             <p>Backers: ${game.backers.toLocaleString()}</p>
         `;
 
@@ -82,7 +88,7 @@ const raisedCard = document.getElementById("total-raised");
 const totalRaised = GAMES_JSON.reduce( (total, game) => total + game.pledged, 0);
 
 // set inner HTML using template literal
-raisedCard.innerHTML = `\$${totalRaised.toLocaleString()}`;
+raisedCard.innerHTML = `$${totalRaised.toLocaleString()}`;
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
@@ -123,11 +129,6 @@ function showAllGames() {
     // add all games from the JSON data to the DOM
     addGamesToPage(GAMES_JSON);
 }
-
-// select each button in the "Our Games" section
-const unfundedBtn = document.getElementById("unfunded-btn");
-const fundedBtn = document.getElementById("funded-btn");
-const allBtn = document.getElementById("all-btn");
 
 // add event listeners with the correct functions to each button
 document.getElementById("unfunded-btn").addEventListener("click", filterUnfundedOnly);
@@ -184,20 +185,42 @@ const runnerUpElement = document.createElement("h2");
 runnerUpElement.innerHTML = runnerUp.name;
 secondGameContainer.appendChild(runnerUpElement);
 
+
 /************************************************************************************
  * Extra Bonus Work: Add a search bar to filter games by name
  * Skills used: filter, event listeners, DOM manipulation
  */
 
+document.getElementById("search-bar").addEventListener("input", function(event) {
+    const query = event.target.value.toLowerCase();
 
-function handleSearch(event) {
-    if (event.key === "Enter") {
-      const searchValue = event.target.value;
-      console.log("Search submitted:", searchValue);
-      // You can also call another function here, like:
-      // performSearch(searchValue);
-      
-    }
-  }
+    // Filter games from GAMES_JSON that match the query
+    const filteredGames = GAMES_JSON.filter(game =>
+        game.name.toLowerCase().includes(query)
+    );
 
-  document.getElementById("search-bar").addEventListener("keydown", handleSearch);
+    // Clear the game cards
+    deleteChildElements(gamesContainer);
+
+    // Re-render only the matching games
+    addGamesToPage(filteredGames);
+});
+
+
+
+/************************************************************************************
+ * Extra Bonus Work: Add button that sorts by the most backers
+ * Skills used: functions, filter, sort
+ */
+
+// sort games by the amount of backers it has
+function filterByBackers() {
+    deleteChildElements(gamesContainer); // remove existing cards
+
+    const sortedByBackers = [...GAMES_JSON].sort((a, b) => b.backers - a.backers);
+    
+    addGamesToPage(sortedByBackers); // re-render sorted list
+}
+
+// add event listeners with the correct functions to each button
+document.getElementById("backers-btn").addEventListener("click", filterByBackers);
