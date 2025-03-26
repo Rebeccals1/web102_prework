@@ -183,3 +183,21 @@ firstGameContainer.appendChild(topGameElement);
 const runnerUpElement = document.createElement("h2");
 runnerUpElement.innerHTML = runnerUp.name;
 secondGameContainer.appendChild(runnerUpElement);
+
+/************************************************************************************
+ * Extra Bonus Work: Add a search bar to filter games by name
+ * Skills used: filter, event listeners, DOM manipulation
+ */
+
+
+function handleSearch(event) {
+    if (event.key === "Enter") {
+      const searchValue = event.target.value;
+      console.log("Search submitted:", searchValue);
+      // You can also call another function here, like:
+      // performSearch(searchValue);
+      
+    }
+  }
+
+  document.getElementById("search-bar").addEventListener("keydown", handleSearch);
