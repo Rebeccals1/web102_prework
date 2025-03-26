@@ -36,7 +36,7 @@ Video created with Loom
 
 **Challenges I encountered:**
 1. It was a challenge to find the right words and numbers for each of the passwords. It might be silly, but I kept using the wrong div name for the challenge #3. It took me awhile to realize that I was using the wrong div name for the password (the hint helped).
-2. I had a challenge trying to implement the search box I have. It seems simple, but it took me awhile to figure out how to sort it. I had to use the internet for help.
+2. Implementing the search box took some time because I wasn't sure how to get the output out of the form initially. Event listeners and the filter function helped a lot here.
 
 ## License
 
