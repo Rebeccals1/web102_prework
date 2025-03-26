@@ -27,7 +27,6 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
-
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
@@ -39,7 +38,9 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+**Challenges I encountered:**
+1. It was a challenge to find the right words and numbers for each of the passwords. It might be silly, but I kept using the wrong div name for the challenge #3. It took me awhile to realize that I was using the wrong div name for the password (the hint helped).
+2. I had a challenge trying to implement the search box I have. It seems simple, but it took me awhile to figure out how to sort it. I had to use the internet for help.
 
 ## License
 
