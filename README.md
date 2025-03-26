@@ -2,7 +2,7 @@
 
 Submitted by: **Rebecca Smith**
 
-**Sea Monster Crowdfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfunding** is a website that displays all of the company's most popular upcoming games. It has filters to show all of their funded and unfunded games, as well as all of their games sorted by the amount pledged. Have a look and see these fantastic games today!
 
 Time spent: **10** hours spent in total
 
@@ -17,7 +17,9 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] Used a lighter color theme.
+* [x] Button color change on hover.
+* [x] Added container to help center content.
 
 ## Video Walkthrough
 
