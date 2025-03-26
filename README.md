@@ -1,23 +1,28 @@
-# WEB102 Prework - **SocialFunds**
+# WEB102 Prework - **Sea Monster Crowdfunding**
 
 Submitted by: **Rebecca Smith**
 
-**SocialFunds** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfunding** is a website that displays all of the company's most popular upcoming games. It has filters to show all of their funded and unfunded games, as well as all of their games sorted by the amount pledged. Have a look and see these fantastic games today!
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* - [x] The introduction section explains the background of the company and how many games remain unfunded.
-* - [x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* - [x] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* - [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+* [x] The introduction section explains the background of the company and how many games remain unfunded.
+* [x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [x] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] Added the amount of money "Needed" or the amount of money "Over" to each game card.
+* [x] Added a button that sorts the game list by the amount of backers it has.
+* [x] Search bar to search for specific games.
+* [x] Used a lighter color theme.
+* [x] Button color changes and uses the pointer on hover.
+* [x] Added content wrapper to help center all of the main content.
 
 ## Video Walkthrough
 
