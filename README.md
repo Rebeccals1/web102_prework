@@ -2,7 +2,7 @@
 
 Submitted by: **Rebecca Smith**
 
-**Sea Monster Crowdfunding** is a website that displays all of the company's most popular crowd funded games. It has filters to show all of their funded and unfunded games, as well as all of their games sorted by the amount pledged. Have a look and see these fantastic games today!
+**Sea Monster Crowdfunding** is a website that displays all of the company's most popular crowd funded games. It has filters to show all of their funded and unfunded games, as well as all of their games sorted by the amount pledged. Don't miss out on some of these early access games, make your pledge today and get rewarded!
 
 Time spent: **10** hours spent in total
 
