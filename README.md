@@ -35,12 +35,12 @@ Video created with Loom
 ## Notes
 
 **Challenges I encountered:**
-1. It was a challenge to find the right words and numbers for each of the passwords. It might be silly, but I kept using the wrong div name for the challenge #3. It took me awhile to realize that I was using the wrong div name for the password (the hint helped).
+1. It was a challenge to find the right words and numbers for each of the passwords. It might be silly, but I kept using the wrong div name for challenge #3. It took me awhile to realize that I was using the wrong div name for the password (the hint helped).
 2. Implementing the search box took some time because I wasn't sure how to get the output out of the form initially. Event listeners and the filter function helped a lot here.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Rebecca Smith]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
